@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="bundle.css">
+
+    <title>ReddMill Furniture</title>
+  </head>
+  <body ng-controller="mainCtrl">
+    <div class="header">
+      <button class="menu-button" ng-click='menuStatus = !menuStatus'
+></button>
+      <img class="logo animate fadeIn" src='img/designco..jpg' alt=''>
+    </div>
+    <div class="menu" ng-if="menuStatus">
+      <a href="#about">About Us</a>
+      <a href="#furniture">Furniture</a>
+      <a href="#Bryce">Bryce</a>
+      <a href="#David">David</a>
+      <a href="#Contact Us">Contact Us</a>
+    </div>
+<div class="main_container">
+<div id="page1">
+  <a id="about" class="smooth"></a>
+  <p></p>
+</div>
+<div id="page2">
+  <a id="furniture" class="smooth">CUSTOM QUALITY FURNITURE</a>
+  <p></p>
+</div>
+<div id="page3">
+  <a id="Bryce" class="smooth">ABOUT BRYCE</a>
+  <P></p>
+</div>
+<div id="page4">
+  <a id="David" class="smooth">ABOUT DAVID</a>
+  <P></P>
+</div>
+<div id="page5">
+  <a id="Contact Us" class="smooth">CONTACT US</a>
+  <p></p>
+</div>
+<footer id="main-footer"></footer>
+<div>
+  <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <script src="./bundle.js">
+  </script>
+  </body>
+</html>
